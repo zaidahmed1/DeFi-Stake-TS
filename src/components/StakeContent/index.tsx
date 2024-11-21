@@ -4,7 +4,7 @@ import Wrapper from '../WhiteWrapper';
 import { Row, Col } from 'antd';
 
 interface StakeContentProps {
-  style?: React.CSSProperties; // Add the style prop here
+  style?: React.CSSProperties;
 }
 
 const StakeContent: React.FC<StakeContentProps> = ({ style }) => {
@@ -22,7 +22,7 @@ const StakeContent: React.FC<StakeContentProps> = ({ style }) => {
         flexDirection: 'column',
         justifyContent: 'center',
         height: 'auto',
-        ...style, // Spread the passed style
+        ...style, 
       }}
     >
       <Row justify="center" align="middle">
@@ -31,7 +31,7 @@ const StakeContent: React.FC<StakeContentProps> = ({ style }) => {
         </Col>
 
         <Col xs={24} style={{ padding: '10px 0' }}>
-          <p>
+          <p style={{ fontSize: '18px', textAlign: 'left' }}>
             <strong>Total stakable amount:</strong> $456.78 <br /><br />
             <strong>Unstaked:</strong> 0.0
           </p>

@@ -5,7 +5,7 @@ import Wrapper from '../WhiteWrapper';
 import { Row, Col } from 'antd';
 
 interface WithdrawContentProps {
-  style?: React.CSSProperties; // Add the style prop here
+  style?: React.CSSProperties; 
 }
 
 const WithdrawContent: React.FC<WithdrawContentProps> = ({ style }) => {
@@ -43,7 +43,7 @@ const WithdrawContent: React.FC<WithdrawContentProps> = ({ style }) => {
         </Col>
 
         <Col xs={24} style={{ padding: '10px 0' }}>
-          <p>
+          <p style={{ fontSize: '18px', textAlign: 'left' }}>
             <strong>Total withdrawable amount:</strong> $123.45 <br /><br />
             <strong>Unstaked:</strong> 0.0
           </p>

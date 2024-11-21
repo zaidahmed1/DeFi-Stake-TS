@@ -7,12 +7,11 @@ import ActionButton from '../../components/ActionButton';
 import { Row, Col } from 'antd';
 
 const Home = () => {
-  // State to manage selected value for the toggle button
   const [selectedOption, setSelectedOption] = useState<string>('stake');
 
-  // Handle the toggle change
+
   const handleToggleChange = (value: string) => {
-    setSelectedOption(value); // Update the selected option
+    setSelectedOption(value); 
   };
 
   const handleOnClick = () => {
@@ -51,7 +50,6 @@ const Home = () => {
         </Col>
       </Row>
       
-      {/* Action Button with similar styling as ToggleButton */}
       <Row justify="center" style={{ marginTop: '30px' }}>
         <Col xs={24} sm={20} md={18} lg={12} xl={8}>
           <ActionButton

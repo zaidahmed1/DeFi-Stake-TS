@@ -44,7 +44,7 @@ const StyledSlider = styled(Slider)<PercentageSliderProps>`
 
   .ant-slider-mark-text {
     // color: ${colors.black} !important;
-    font-size: 10px;
+    font-size: 13px;
   }
 `
 

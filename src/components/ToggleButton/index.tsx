@@ -8,7 +8,8 @@ const ToggleContainer = styled.div<{ fullWidth?: boolean; background?: boolean }
   background: ${({ background }) => (background ? colors.white : 'transparent')};
   border-radius: 100px;
   overflow: hidden;
-  padding: 4px;
+  padding: 7px;
+  height: 40px;
   width: ${({ fullWidth }) => fullWidth && '100%'};
 `;
 
@@ -23,7 +24,7 @@ const StyledToggleButton = styled.button<{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: ${({ selected }) => (selected ? '700' : 'normal')};
   padding: ${({ padding }) => (padding ? padding : '8px 20px')};
   border: ${({ selected }) => (selected ? `1px solid ${colors.lightGreen}` : 'none')};
